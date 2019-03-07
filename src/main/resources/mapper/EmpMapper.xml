@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sto.springboot.mapper.EmpMapper">
+
+    <!--<resultMap id="empMap" type="com.sto.springboot.entity.Employee">
+
+    </resultMap>-->
+
+    <!--List<Employee> queryEmpsByPage();-->
+    <select id="queryEmpsByPage"  resultType="com.sto.springboot.entity.Employee">
+        select
+        code,userName,realName,nickName,duty,title
+        from employee
+        where 1=1
+        <if test="code!=null">
+        and code like '%${code}%'
+        </if>
+        <if test="userName!=null">
+        and userName like '%${userName}%'
+        </if>
+        <if test="offset!=null and pageSize!=null">
+        limit #{offset},#{pageSize}
+        </if>
+    </select>
+
+    <!--int queryTotals();-->
+    <select id="queryTotals" resultType="int">
+        select
+        count(*)
+        from employee
+    </select>
+
+    <!--Employee findEmpById(int id);-->
+    <select id="findEmpById" resultType="com.sto.springboot.entity.Employee">
+        select
+        code,userName,realName,nickName,duty,title
+        from employee
+        where id = #{id}
+    </select>
+
+    <!--List<Employee> queryByCodeAndUsername(Map<String, String> map);-->
+    <select id="queryByCodeAndUsername" resultType="com.sto.springboot.entity.Employee">
+        select
+        code,userName
+        from employee
+        where 1=1
+        <if test="code!=null">
+            and code like '%${code}%'
+        </if>
+        <if test="userName!=null">
+            and userName like '%${userName}%'
+        </if>
+    </select>
+</mapper>

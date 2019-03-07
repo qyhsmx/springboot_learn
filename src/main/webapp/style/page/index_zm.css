@@ -1,0 +1,249 @@
+/*
+name@filemanage
+author@zhangming
+time@2018/06/07
+*/
+html,body{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.manager_box{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.page_header_menu{
+    height: 60px;
+    background: white;
+    box-shadow: 0px 2px 2px #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+.page_header_menu .menu_title{
+    padding-left: 20px;
+}
+.page_header_menu ul{
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px;
+}
+.page_header_menu ul li{
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 60px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.page_header_menu ul li.active{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.manager_box_content{
+    flex: 1;
+    box-sizing: border-box;
+    margin: 10px;
+    background: white;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+}
+.manager_box_content .content_left_nav{
+    width: 240px;
+    box-sizing: border-box;
+    border-right: 1px solid #eee;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+.manager_box_content .content_right_warp{
+    flex: 1;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.crumbs_box{
+    height: 45px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*角色管理-弹窗角色人数*/
+.characterpeople{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content:space-between;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.characterpeople_left{
+    height: 100%;
+    width: 250px;
+    border-right: 1px solid #eee;
+    overflow-y: auto;
+}
+.characterpeople_right{
+    height: 100%;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.boxtable{
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #eee;
+}
+
+
+.inner_search_box{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-flow: row nowrap;
+}
+
+.inner_search_box input{
+    height: 40px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 8px 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+.inner_search_box button{
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 0px 30px;
+    color: white;
+    margin-left: 10px;
+}
+.inner_search_box .check_ball{
+    flex: 1;
+    box-sizing: border-box;
+    height: 300px;
+    background: white;
+    border:1px solid #eee;
+    overflow-y: auto;
+}
+.inner_search_box .checked_button{
+    width: 80px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search_box{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+}
+.search_box .ibox_form{
+    flex: 1;
+}
+.search_btn_box{
+    padding: 0px 20px;
+}
+.ibox_table{
+    border:1px solid #eee;
+    border-left: none;
+}
+
+.td_clunm{
+    background: #f5f5f5;
+}
+
+
+.form-control{
+    height: inherit!important;
+}
+
+.row_flex{
+    display: flex;
+    float: left;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    margin-right: 10px;
+    align-items: center;
+}
+.asset_input{
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 5px 10px;
+    height: 30px;
+    position: relative;
+    margin-top: -10px;
+}
+
+/*左侧导航样式冲突*/
+.layui-nav-tree{
+    width: 239px;
+}
+.layui-nav{
+    background-color:white;
+}
+.layui-nav-tree .layui-nav-item{
+    border-bottom: 1px solid #eee;
+}
+.layui-nav-tree .layui-nav-item a:hover{
+    color: #333;
+    background-color: #eee;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover{
+    background: #fff;
+    color: #666;
+}
+.layui-nav .layui-nav-item a{
+    color: #666;
+    font-size: 14px;
+}
+.layui-nav-child dd.layui-this a{
+    color: red;
+}
+.layui-nav-tree .layui-nav-bar{
+    background: #ea724d;
+}
+.layui-nav-itemed>a, .layui-nav-tree .layui-nav-title a, .layui-nav-tree .layui-nav-title a:hover{
+    background: #f58664!important;
+}
+.layui-nav .layui-nav-mored, .layui-nav-itemed .layui-nav-more{
+    border-color: transparent transparent #fff;
+}
+.layui-nav .layui-nav-child a{
+    font-size: 12px!important;
+}
+
+
+.item-active{
+    color: #ea724d!important;
+}

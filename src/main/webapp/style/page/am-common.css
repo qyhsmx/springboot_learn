@@ -1,0 +1,448 @@
+@charset "utf-8";
+
+/*	项目名称：梧桐
+ *	文件名称：APP后台管理公用样式
+ *	开发时间：2017/08/10
+ * 	开发人员：398146685@qq.com
+ * */
+
+
+
+.width_80{
+    width: 80px;
+}
+
+.width_90{
+    width: 90px !important;
+}
+
+.ibox .ibox_title {
+	padding: 0;
+}
+
+.ibox .ibox_title span {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 6px 0;
+	border-bottom: 2px solid #f58664;
+}
+
+.today-total{
+    width: 100%;
+}
+
+/*数据统计页面*/
+.inner-welcome-box1{
+	margin-bottom: 15px;
+}
+
+.arc{
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-left: 20px;
+}
+
+.layui-row{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.layui-col-md3 p{
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.layui-col-md3 p.title1{
+	text-align: left;
+	margin-left: 2px;
+}
+
+.layui-col-md3 .title{
+	color: #666666;
+	font-size: 14px;
+}
+
+.layui-col-md3 .title img{
+	float: left;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.layui-col-md3 .title span{
+	height: 35px;
+	line-height: 26px;
+}
+
+.layui-col-md3 .number{
+	font-size: 30px;
+	font-weight: 600;
+	color: #444444;
+}
+
+.layui-col-md3 .mouth_number{
+	font-size: 30px;
+	font-weight: 600;
+	color: #444444;
+	text-align: left;
+}
+
+.layui-col-md3 .pre span{
+	color: #999999;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.layui-col-md3 .pre i{
+	
+	color: #ff0914;
+	border-radius: 50%;
+}
+
+.part2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.part2 .title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.part2 .title i{
+	font-size: 70px;
+}
+
+.left{
+	width: 55%;
+	float: left;
+}
+
+.right{
+	width: calc(45% - 16px);
+	float: right;
+}
+
+/*新闻详情查看*/
+.news_detail h3.title {
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+
+.news_detail h5{
+	font-size: 14px;
+	color: #999999;
+	font-weight: 500;
+	text-align: center;
+	margin: 8px 0 10px;
+}
+
+.news_detail .news_cont{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.news_detail .news_cont img{
+	max-width: 100%;
+	height: auto;
+	margin: 10px 0;
+}
+
+.news_detail .news_cont p{
+	margin: 10px 0;
+	color: #444444;
+	text-align: left;
+	text-indent: 35px;
+	line-height: 22px;
+}
+
+.dz-btn{
+	margin-top: 6px;
+	width: 100%;
+}
+/*新增广告*/
+.table-add-new .one{
+	/*display: none;*/
+}
+.table-add-new .two{
+	display: none;
+}
+.table-add-new .td_clunm{
+	text-align: right;
+}
+
+.table-add-new .layui-input,
+.table-add-new .layui-select{
+	border: none;
+}
+.table-add-new #date{
+	border:1px solid #e2e2e2!important;
+}
+.td_clunm .icon-required{
+	color:#f58664;
+}
+.box-btns{
+	margin-top:80px;
+	text-align: center;
+}
+.box-btns button{
+	width:92px;
+	padding: 0;
+	border-radius: 2px;
+}
+.box-btns .btn-reset{
+	margin-right: 25px;
+}
+.box-btns .btn-reset:hover{
+	border:1px solid  #f58664;
+}
+.box-btns .btn-submit{
+	margin-left: 25px;
+	border:1px solid  #f58664;
+	background: #f58664;
+}
+.tab{
+	border: 1px solid #e2e2e2;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+	margin: 0!important;
+}
+.tab .tab-title,.tab .tab-content{
+	float: left;
+}
+.tab .tab-title{
+	background:#f2f2f2;
+	width: 200px;
+	white-space: nowrap;
+	font-size: 0;
+	transition: all .2s;
+	-webkit-transition: all .2s;
+}
+.tab .tab-title li{
+	display:block;
+	vertical-align: middle;
+	font-size: 14px;
+	transition: all .2s;
+	-webkit-transition: all .2s;
+	line-height: 200px;
+	text-align: center;
+	cursor: pointer;
+	float: none;
+	border-radius:0;
+	margin:0;
+	padding: 10px 0;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color:#e2e2e2;
+}
+.tab .tab-title .this{
+	background-color:#fff;
+	color: #000;
+	border-right:none;
+}
+.tab .tab-title .layui-form-radio{
+	margin-top:0;
+}
+
+.table-news  .tab .tab-content{
+	padding: 10px;
+	background-color:#fff;
+}
+.table-news .tab .tab-content .tab-item{
+	width: calc(100% - 224px);
+/*Firefox*/
+	width:-moz-calc(100% - 224px);
+/*chrome safari*/
+	width:-webkit-calc(100% - 224px);
+}
+.tab .tab-content .tab-item{
+	display: none;
+}
+.tab .tab-content .show{
+	display: block!important;
+}
+
+/*新增app*/
+.box-version >input{
+float: left;
+width: 15%;
+border: 1px solid #e2e2e2!important;
+}
+.box-version >input:nth-child(1),
+.box-version >input:nth-child(2){
+	margin-right: 10px;
+}
+.scope-tab .layui-tab-title{
+	border: none;
+}
+.scope-tab>.layui-tab-title .layui-this{
+	color: #333;
+}
+.scope-tab>.layui-tab-more li.layui-this:after, .scope-tab>.layui-tab-title .layui-this:after{
+	border-bottom: none!important;
+}
+.scope-tab .layui-tab-content{
+	width: 100%;
+}
+.scope-tab .layui-tab-content .layui-tab-item{
+	height: 200px;
+	overflow-y: auto;
+}
+.scope-tab .layui-tab-content .layui-tab-item:nth-child(2),
+.scope-tab .layui-tab-content .layui-tab-item:nth-child(3)
+{
+	border: 1px solid #e2e2e2!important;
+	padding: 6px;
+	width: 450px;
+}
+.box-edit{
+	height: 300px!important;
+}
+
+.city-list li{
+	display: inline-block;
+	float: left;
+	padding: 4px 8px;
+	border: 2px solid #e2e2e2!important;
+	border-radius: 6px;
+	letter-spacing: 2px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	cursor: pointer;
+}
+.city-list li.city-selected{
+	color:#fff;
+	background:#f58664;
+	border: 2px solid #f58664!important;
+}
+.box-top{
+	margin: 15px 0;
+}
+.box-top input{
+	height: 32px;
+	line-height: 32px;
+	padding-left:10px;
+	border:1px solid #e2e2e2!important;
+	margin-right: 60px;
+}
+.box-top span,.box-equipment .btn-add{
+	background: #f58664;
+	color: #fff;
+}
+.box-top span{
+	display: inline-block;
+	background: #f58664;
+	color: #fff;
+}
+.box-top span:hover{
+	color: #fff;
+}
+.table-numing-list tbody tr .delect{
+cursor: pointer;
+}
+.table-add-new .layui-anim-upbit{
+	z-index: 1000;
+}
+.box-upload-file{
+	position: relative;
+}
+.box-upload-file #file{
+	visibility: hidden;
+}
+
+.box-upload-file .bag{
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	height: 22px;
+	line-height:22px;
+	cursor: pointer;
+}
+.box-upload-file img{
+	position: absolute;
+	right: 10px;
+	top: -3px;
+	display: inline-block;
+	width:22px;
+}
+/*版本号*/
+.box-equipment >div{
+	width: 25%;
+	height: 150px;
+	float: left;
+}
+.box-equipment .change-color .layui-form-label{
+	border: none;
+	background: none;
+}
+.box-equipment .change-color .layui-input-block select,
+.box-equipment .change-color .layui-input-block input{
+	border: 1px solid #e2e2e2!important;
+}
+.box-equipment .layui-form-item{
+	clear: none;
+}
+.box-equipment .size-list,
+.box-equipment .selected-list {
+	border: 1px solid #e2e2e2!important;
+	height: 100%;
+	overflow-y: auto;
+	width: 34%;
+}
+.selected-list li{
+	height: 30px;
+	line-height: 30px;
+	margin: 4px 0 7px 7px;
+
+}
+.selected-list .icon-delect{
+	font-weight: bolder;
+	margin-left: 15px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.selected-list .icon-delect img{
+	width: 20px;
+	margin-top: 4px;
+}
+/*短信模板 sms*/
+.box-hot-keys span{
+	display: inline-block;
+}
+.box-hot-keys span:hover{
+border: 1px solid #f58664!important;
+}
+.box-hot-keys-2{
+	display: none;
+}
+.btn-this{
+	color:#fff;
+	background:#f58664;
+	border: 1px solid #f58664!important;
+}
+/*查看详情*/
+.table-see-details tr .td_clunm{
+	width: 180px!important;
+}
+.table-see-details .tab .tab-content {
+	width: calc(100% - 224px);
+	/*Firefox*/
+	width:-moz-calc(100% - 224px);
+	/*chrome safari*/
+	width:-webkit-calc(100% - 224px);
+}
+.table-see-details tbody tr:last-child .tab-item{
+	height: 600px;
+	overflow-y: auto;
+}
+
+
+
+
+

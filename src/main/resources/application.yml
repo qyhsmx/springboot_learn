@@ -1,0 +1,49 @@
+#开发环境配置
+spring:
+  profiles:
+    active: dev
+
+#mybatis配置
+mybatis:
+  type-aliases-package: com.sto.springboot.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#tomcat配置
+server:
+  port: 8080
+
+---
+
+spring:
+     profiles: dev
+     #mvc配置
+     mvc:
+       view:
+         prefix: /WEB-INF/views/
+         suffix: .jsp
+     #数据源配置
+     datasource:
+       url: jdbc:mysql://localhost:3306/data?serverTimezone=GMT%2B8
+       username: root
+       password: root
+       driver-class-name: com.mysql.jdbc.Driver
+       #使用druid数据源
+       type: com.alibaba.druid.pool.DruidDataSource
+       #数据源其他配置 必须添加进配置类中
+       initialSize: 5
+       minIdle: 5
+       maxActive: 20
+       maxWait: 60000
+       timeBetweenEvictionRunsMillis: 60000
+       minEvictableIdleTimeMillis: 300000
+       validationQuery: SELECT 1 FROM DUAL
+       testWhileIdle: true
+       testOnBorrow: false
+       testOnReturn: false
+       poolPreparedStatements: true
+     jpa:
+       database: mysql
+     main:
+       allow-bean-definition-overriding: true
